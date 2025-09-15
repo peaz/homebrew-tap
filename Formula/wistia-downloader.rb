@@ -31,6 +31,17 @@ class WistiaDownloader < Formula
     bin.install "wistia-downloader"
   end
 
+  def caveats
+    <<~EOS
+      This is an unsigned binary. On macOS, you may need to allow it in Security & Privacy settings
+      or run the following command to remove the quarantine attribute:
+        xattr -d com.apple.quarantine #{bin}/wistia-downloader
+
+      Alternatively, you can build from source by visiting:
+        https://github.com/peaz/wistia-downloader
+    EOS
+  end
+
   test do
     # Test that the binary runs and shows help
     assert_match "Wistia", shell_output("#{bin}/wistia-downloader --help 2>&1", 1)
