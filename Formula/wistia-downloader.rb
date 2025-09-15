@@ -1,6 +1,7 @@
 class WistiaDownloader < Formula
   desc "Command-line tool to download videos from Wistia hosting platform"
   homepage "https://github.com/peaz/wistia-downloader"
+  version "1.1.1"
   license "MIT"
   head "https://github.com/peaz/wistia-downloader.git", branch: "main"
 
