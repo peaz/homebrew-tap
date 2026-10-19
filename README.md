@@ -23,10 +23,7 @@ wistia-downloader --help
 ```
 
 - Pre-built binaries for macOS and Linux, on both amd64 and arm64.
-- The binaries are **unsigned**. If macOS Gatekeeper blocks it, clear the quarantine flag:
-  ```bash
-  xattr -d com.apple.quarantine $(which wistia-downloader)
-  ```
+- The binaries are signed and notarized, so no Gatekeeper workaround is needed.
 - Source and issues: [peaz/wistia-downloader](https://github.com/peaz/wistia-downloader)
 
 ## displaymodemenu
