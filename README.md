@@ -32,6 +32,17 @@ wistia-downloader --help
 
 **Project Repository:** [peaz/wistia-downloader](https://github.com/peaz/wistia-downloader)
 
+### displaymodemenu (cask)
+
+A macOS menu bar app for switching display resolutions, with Shortcuts integration. Signed and notarized. Requires macOS 13+.
+
+**Install:**
+```bash
+brew install --cask displaymodemenu
+```
+
+**Project Repository:** [peaz/displaymodemenu](https://github.com/peaz/displaymodemenu)
+
 ## Important Notes
 
 ### Code Signing
